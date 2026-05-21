@@ -1,23 +1,22 @@
 // 1. Define your games here. 
-// For the downloader to work perfectly, you can store the game's raw HTML/JS code inside the 'code' property.
 const games = [
     {
         id: "crazycattle",
         title: "Crazy Cattle 3D",
-        description: "A weird ass game about being a sheep and ramming into other sheep. Be the only sheep left standing.",
-        // Example of a self-contained HTML game
+        description: "A weird game about being a sheep and ramming into other sheep. Be the only sheep left standing.",
+        // The inner backticks are now properly escaped with \` and local files are pointed to absolute URLs
         code: `
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <script>!function(){const e="https://yoplay.io",n=window.location.href.includes(".embed");if(function isCrossOriginIframe3(){try{return window!==window.top&&window.top.location.hostname!==window.location.hostname}catch(e){return!0}}()){if(n||document.referrer.startsWith(e))return;{const e=`<style>html body * {display: none !important;opacity: 0 !important;}html body #home_box * {display: block !important;opacity: 1 !important;font-family: Helvetica, Arial, Roboto, sans-serif;}</style><div id="home_box" style="opacity: 1 !important;position: fixed;inset: 0px;display: flex !important;flex-direction: column;-webkit-box-align: center;align-items: center;-webkit-box-pack: center;justify-content: center;padding: 24px;text-align: center;">
+    <script>!function(){const e="https://yoplay.io",n=window.location.href.includes(".embed");if(function isCrossOriginIframe3(){try{return window!==window.top&&window.top.location.hostname!==window.location.hostname}catch(e){return!0}}()){if(n||document.referrer.startsWith(e))return;{const e=\`<style>html body * {display: none !important;opacity: 0 !important;}html body #home_box * {display: block !important;opacity: 1 !important;font-family: Helvetica, Arial, Roboto, sans-serif;}</style><div id="home_box" style="opacity: 1 !important;position: fixed;inset: 0px;display: flex !important;flex-direction: column;-webkit-box-align: center;align-items: center;-webkit-box-pack: center;justify-content: center;padding: 24px;text-align: center;">
             <img src="https://yoplay.io/data/image/options/home-bg.jpg" alt="Background Image" title="Yoplay.io Background" style="position: absolute;inset: 0;width: 100%;height: 100%;object-fit: cover;z-index: -1;">
             <h1 style="font-size: 27px;font-weight: 600;margin: 9px 0;color: #fff;text-transform: uppercase;text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Play Crazy Cattle 3d on</h1>
             <a target="_blank" title="Home" href="https://yoplay.io"><img style="display: block;width: 200px;height: 100%;object-fit: cover;" src="https://yoplay.io/data/image/options/home-logo-web.png" alt="Logo Image" title="Yoplay.io Logo"></a>
             <p style="color: #fff;font-size: 24px;font-weight: 500;margin-top: 9px;margin-bottom: 21px;font-style: italic;">for best experiment!</p>
             <a target="_blank" title="Play Crazy Cattle 3d" href="https://yoplay.io/crazy-cattle-3d/" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);text-decoration: none;background-color: rgba(255, 255, 255, 0.3);color: #fff;font-weight: 700;padding: 12px 32px;border: 1px solid #fff;border-radius: 3px;box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);transition: all 0.3s ease-in-out;transform: scale(1);cursor: pointer;">Play Now!</a>
-        </div>`;return void(document.body?(document.body.innerHTML=e,window.addEventListener=function(){},document.write=function(){},window.stop(),document.querySelectorAll("script").forEach((e=>e.remove()))):document.addEventListener("DOMContentLoaded",(()=>{document.body||document.querySelector("body")||document.documentElement.appendChild(document.createElement("body")),document.body.innerHTML=e,window.addEventListener=function(){},document.write=function(){},window.stop(),document.querySelectorAll("script").forEach((e=>e.remove()))})))}}n||document.referrer.startsWith(e)||(window.location.href="https://yoplay.io/crazy-cattle-3d/")}();</script>
+        </div>\`;return void(document.body?(document.body.innerHTML=e,window.addEventListener=function(){},document.write=function(){},window.stop(),document.querySelectorAll("script").forEach((e=>e.remove()))):document.addEventListener("DOMContentLoaded",(()=>{document.body||document.querySelector("body")||document.documentElement.appendChild(document.createElement("body")),document.body.innerHTML=e,window.addEventListener=function(){},document.write=function(){},window.stop(),document.querySelectorAll("script").forEach((e=>e.remove()))})))}}n||document.referrer.startsWith(e)||(window.location.href="https://yoplay.io/crazy-cattle-3d/")}();</script>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 	<title>CrazyCattle3D</title>
@@ -113,8 +112,8 @@ const games = [
 			z-index: 1;
 		}
 	</style>
-	<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
-	<link rel="apple-touch-icon" href="index.apple-touch-icon.png" />
+	<link id="-gd-engine-icon" rel="icon" type="image/png" href="https://yoplay.io/crazy-cattle-3d/index.icon.png" />
+	<link rel="apple-touch-icon" href="https://yoplay.io/crazy-cattle-3d/index.apple-touch-icon.png" />
 
 </head>
 
@@ -128,22 +127,22 @@ const games = [
 	</noscript>
 
 	<div id="status">
-		<img id="status-splash" class="show-image--true fullsize--true use-filter--true" src="index.png" alt="">
+		<img id="status-splash" class="show-image--true fullsize--true use-filter--true" src="https://yoplay.io/crazy-cattle-3d/index.png" alt="">
 		<progress id="status-progress"></progress>
 		<div id="status-notice"></div>
 	</div>
 
-	<script src="index.js"></script>
+	<script src="https://yoplay.io/crazy-cattle-3d/index.js"></script>
 	<script>
 		const GODOT_CONFIG = {
 			"args": [],
 			"canvasResizePolicy": 2,
 			"ensureCrossOriginIsolationHeaders": true,
-			"executable": "index",
+			"executable": "https://yoplay.io/crazy-cattle-3d/index",
 			"experimentalVK": false,
 			"fileSizes": {
-				"index.pck": 42336176,
-				"index.wasm": 43699190
+				"https://yoplay.io/crazy-cattle-3d/index.pck": 42336176,
+				"https://yoplay.io/crazy-cattle-3d/index.wasm": 43699190
 			},
 			"focusCanvas": true,
 			"gdextensionLibs": []
@@ -210,7 +209,6 @@ const games = [
 					} catch (err) {
 						serviceWorkerRegistrationPromise = Promise.reject(new Error('Service worker registration failed.'));
 					}
-					// There's a chance that installing the service worker would fix the issue
 					Promise.race([
 						serviceWorkerRegistrationPromise.then((registration) => {
 							if (registration != null) {
@@ -218,18 +216,15 @@ const games = [
 							}
 							return registration;
 						}).then(() => engine.installServiceWorker()),
-						// For some reason, `getRegistration()` can stall
 						new Promise((resolve) => {
 							setTimeout(() => resolve(), 2000);
 						}),
 					]).then(() => {
-						// Reload if there was no error.
 						window.location.reload();
 					}).catch((err) => {
 						console.error('Error while registering service worker:', err);
 					});
 				} else {
-					// Display the message as usual
 					const missingMsg = 'Error\nThe following features required to run Godot projects on the Web are missing:\n';
 					displayFailureNotice(missingMsg + missing.join('\n'));
 				}
@@ -255,12 +250,6 @@ const games = [
 </body>
 
 </html>`
-/* ---END OF CODE--- */
-
-
-
-
-
     },
     {
         id: "snake",
@@ -316,7 +305,7 @@ window.downloadGame = function(gameId) {
     // Create a hidden anchor tag to trigger the download
     const a = document.createElement('a');
     a.href = url;
-    a.download = `${game.id}.html`; // Names the file (e.g., pong.html)
+    a.download = `${game.id}.html`; // Names the file
     
     // Append, click, and clean up
     document.body.appendChild(a);
